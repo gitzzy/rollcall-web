@@ -1,0 +1,184 @@
+.timed-roll-call {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ECECEC;
+}
+.timed-roll-call .nav-bar {
+  padding: 20px 15px;
+  height: 42px;
+  line-height: 42px;
+}
+.timed-roll-call .nav-bar label {
+  font-size: 22px;
+  color: #008CFF;
+  font-weight: bold;
+}
+.timed-roll-call .nav-bar .pills-nav-area {
+  display: inline-block;
+}
+.timed-roll-call .nav-bar .control-btn {
+  float: right;
+}
+.timed-roll-call .my-btn-named {
+  padding: 0 21px !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  height: 40px !important;
+  box-shadow: 0 0 10px #4a92fe !important;
+  color: #008CFF !important;
+  margin-left: 12px!important;
+}
+
+.timed-roll-call .content-area {
+  width: 1870px;
+  height: 898px;
+  background: #fff url("../../../static/images/rooms_bg.png") no-repeat;
+}
+
+
+.timed-roll-call .areas-menu {
+  background-color: #fff;
+  float: left;
+  padding: 20px 10px;
+  width: 300px;
+  height: 858px;
+  overflow: hidden;
+  position: relative;
+}
+
+.timed-roll-call .areas-content {
+  float: left;
+  width: 1550px;
+  height: 898px;
+}
+.timed-roll-call .areas-content .areas-content-head {
+  height: 98px;
+}
+.timed-roll-call .areas-content .rooms-list {
+  width: 1370px;
+  height: 700px;
+  background-color: #fff;
+  padding-top: 30px;
+  margin-left: 50px;
+  position: relative;
+}
+.timed-roll-call .areas-content .rooms-list .rooms-list-head {
+  padding-left: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  width: 1360px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  background: url("../../../static/icon/other/icon_rooms_head.png") no-repeat;
+}
+
+
+.timed-roll-call .areas-content .query-form {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.timed-roll-call .areas-content .query-form .el-form .el-form-item {
+  margin-bottom: 0;
+}
+.timed-roll-call .areas-content .query-form .el-form .el-form-item .el-form-item__label {
+  color: #fff;
+  font-size: 18px;
+}
+
+.timed-roll-call .query-form .el-input__inner {
+  width: 220px;
+  border-radius: 20px;
+  margin-top: 2px;
+  border-color: #fff;
+  box-shadow: 0 0 10px #4a92fe;
+}
+.timed-roll-call .el-input__prefix, .el-input__suffix {
+  top: 2px;
+}
+
+.timed-roll-call .my-label {
+  color: #fff;
+  font-size: 18px;
+  padding-right: 12px;
+}
+
+.timed-roll-call .padding-35 {
+  padding-left: 35px;
+}
+
+.timed-roll-call .form-btn {
+  text-align: center;
+  padding-top: 10px;
+}
+.timed-roll-call .form-btn .my-btn-named-ghost {
+  background-color: transparent;
+  color: #fff!important;
+  font-size: 22px!important;
+  padding: 11px 42px 11px 75px!important;
+  margin: 0 25px;
+  height: auto!important;
+  border-radius: 23px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  position: relative;
+}
+.timed-roll-call .form-btn .my-btn-named-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.timed-roll-call .form-btn .my-btn-named-ghost .btn-icon {
+  position: absolute;
+  top: 8px;
+  left: 42px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+.timed-roll-call .form-btn .my-btn-named-ghost .btn-icon-submit {
+  background: url("../../../static/icon/other/icon_submit.png") no-repeat;
+}
+.timed-roll-call .form-btn .my-btn-named-ghost .btn-icon-cancel {
+  background: url("../../../static/icon/other/icon_cancel.png") no-repeat;
+}
+.timed-roll-call .form-btn .my-btn-named-ghost .btn-icon-reset {
+  background: url("../../../static/icon/other/icon_reset.png") no-repeat;
+}
+
+
+.timed-roll-call .my-btn {
+  padding: 0 21px !important;
+  font-weight: bold;
+  font-size: 18px;
+  height: 40px;
+  box-shadow: 0 0 10px #4a92fe;
+  color: #008CFF;
+
+  z-index: 999;
+}
+.timed-roll-call .notAllCheck {
+  color: #fff!important;
+  border-color: #4A92FE!important;
+  background-color: #4A92FE!important;
+  box-shadow: 0 0 10px #4a92fe;
+}
+
+.timed-roll-call .ang-rooms {
+  width: 1208px;
+  height: 658px;
+  padding: 21px 81px;
+  overflow: hidden;
+  background: url("../../../static/images/rooms_list_bg.png") no-repeat;
+  position: relative;
+}
+
+.timed-roll-call .my-textarea {
+  width: 368px;
+  height: 150px;
+  padding: 10px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #666;
+}

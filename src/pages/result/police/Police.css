@@ -1,0 +1,139 @@
+.police-modify {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ECECEC;
+}
+.police-modify .operating-area {
+  margin-top: 10px;
+  float: left;
+  width: 410px;
+  height: 981px;
+  overflow: hidden;
+
+  /* 兼容的浏览器（Opera 12.1， IE 10， Firefox 16， Chrome 26， Safari 6.1） */
+  background: linear-gradient(to bottom, #4A92FE, #56D2F8);
+}
+.police-modify .table-area {
+  margin-top: 10px;
+  padding: 0 10px;
+  float: left;
+  width: 1440px;
+  height: 981px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 45, 111, 0.7);
+}
+
+.police-modify .operating-area ul {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 28px 20px 10px;
+}
+.police-modify .operating-area ul li {
+  height: 77px;
+  line-height: 77px;
+  border-bottom: 1px solid #8AB9FF;
+}
+.police-modify .operating-area ul li:last-child {
+  border-bottom: 0;
+}
+.police-modify .operating-area ul li label {
+  display: inline-block;
+  padding: 0 10px;
+  width: 110px;
+}
+.police-modify .operating-area .num-card {
+  padding: 18px 0;
+  width:120px;
+  height:60px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 auto 70px;
+  box-shadow: 0 0 20px #0092FE;
+}
+.police-modify .operating-area .num-card p:first-child {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #008CFF;
+}
+.police-modify .operating-area .num-card p:last-child {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 44px;
+}
+.police-modify .operating-area .num-card p.warning-p {
+  color: #FF7E00;
+}
+.police-modify .operating-area .num-card p.danger-p {
+  color: #FF0000;
+}
+
+/*点名结果列表*/
+.police-modify .el-table {
+  color: #333!important;
+  margin-top: 20px;
+}
+
+/*表头底线*/
+.police-modify .el-table thead th.is-leaf {
+  border-bottom: 1px solid #4A92FE;
+}
+/*表头文字样式*/
+.police-modify .el-table thead {
+  color: #008CFF;
+  font-size: 16px;
+}
+/*表头的内边距*/
+.police-modify .el-table th {
+  padding: 8px 0;
+}
+.police-modify .el-table thead th.is-leaf {
+  background-color: #4A92FE;
+  color: #fff;
+}
+
+.police-modify .el-table th, .el-table td {
+  text-align: center;
+  border-bottom: 0;
+}
+.police-modify .el-table td{
+  padding: 5px 10px 4px 10px;
+}
+.police-modify .el-table td .cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.police-modify .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #E7F1FF;
+}
+.police-modify .el-button--text {
+  padding: 0;
+  font-size: 12px;
+  color: #008CFF;
+  width: 52px;
+}
+
+.zhanwei {
+  display: inline-block;
+  width: 9px;
+}
+
+.police-modify .table-area .button-area {
+  text-align: center;
+  padding-top: 30px;
+}
+.police-modify .table-area .button-area .my-btn {
+  color: #4A92FE;
+  font-size: 22px;
+  font-weight: bold;
+  border: 2px solid #4A92FE;
+  border-radius: 30px;
+  margin: 0 50px;
+}
+
+.police-modify .el-input__inner {
+  border-radius: 20px;
+}

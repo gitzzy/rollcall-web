@@ -1,0 +1,114 @@
+.prisoner {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ECECEC;
+}
+.prisoner .nav-bar {
+  padding: 20px 15px;
+  height: 42px;
+  line-height: 42px;
+}
+.prisoner .nav-bar label {
+  font-size: 18px;
+  color: #008CFF;
+  font-weight: bold;
+}
+.prisoner .nav-bar .query-form {
+  height: 100%;
+}
+.prisoner .nav-bar .query-form  .el-form{
+  float: left;
+}
+.prisoner .nav-bar .query-form .el-form--inline .el-form-item {
+  margin-bottom: 0;
+}
+.prisoner .nav-bar .query-form .el-input__inner {
+  width: 220px;
+  border-radius: 20px;
+  margin-top: 2px;
+  border-color: #fff;
+  box-shadow: 0 0 10px #4a92fe;
+}
+.prisoner .el-input__prefix, .el-input__suffix {
+  top: 2px;
+}
+
+.prisoner .re-home {
+  float: right;
+  color: #008CFF;
+  margin-left: 12px!important;
+}
+
+.prisoner .my-btn {
+  margin-top: 2px;
+  padding: 0 12px !important;
+  font-weight: bold;
+  font-size: 18px;
+  height: 40px;
+  box-shadow: 0 0 10px #4a92fe;
+}
+
+.prisoner .table-area {
+  padding: 10px;
+  width: 1850px;
+  height: 890px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 45, 111, 0.7)
+}
+.prisoner .pages-area {
+  padding: 10px;
+  height: 66px;
+  border-top: 1px solid #4A92FE;
+  text-align: center;
+}
+
+.prisoner .el-pagination button, .el-pager li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+.prisoner .el-pagination__jump {
+  font-size: 14px!important;
+  padding-top: 4px;
+}
+
+.prisoner .el-table {
+  color: #333;
+}
+/*表头底线*/
+.prisoner .el-table thead th.is-leaf {
+  border-bottom: 1px solid #4A92FE;
+}
+/*表头文字样式*/
+.prisoner .el-table thead {
+  color: #008CFF;
+  font-size: 16px;
+}
+/*表头的内边距*/
+.prisoner .el-table th {
+  padding: 8px 0;
+}
+
+.prisoner .el-table th, .el-table td {
+  text-align: center;
+  border-bottom: 0;
+}
+.prisoner .el-table td{
+  padding: 5px 10px 4px 10px;
+}
+.prisoner .el-table td .cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.prisoner .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #E7F1FF;
+}
+.prisoner .el-button--text {
+  padding: 0;
+  font-size: 12px;
+  color: #008CFF;
+  width: 52px;
+}

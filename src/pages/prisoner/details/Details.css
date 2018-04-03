@@ -1,0 +1,107 @@
+.details .table-area {
+  padding: 0 !important;
+  width: 1880px !important;
+  height: 908px !important;
+  background: url("../../../../static/images/rooms_bg.png") no-repeat;
+}
+.details .table-area .data-area {
+  width: 285px;
+  height: 878px;
+  padding: 15px;
+  background-color: #fff;
+}
+.details .table-area .data-area .title {
+  color: #4a92fe;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.details .table-area .data-area .collapse-area {
+  height: 815px;
+  overflow-y: scroll;
+}
+.details .table-area .data-area .collapse-area .el-collapse-item__header {
+  font-size: 16px;
+  color: #333;
+}
+.details .table-area .data-area .collapse-area .el-collapse-item__content {
+  font-size: 14px;
+  color: #4a92fe;
+}
+.details .table-area .picture-area {
+  width: 1565px;
+  height: 908px;
+}
+.details .table-area .picture-area .picture-content {
+  padding: 80px 12px;
+}
+.details .table-area .picture-area .picture-content .picture-item {
+  cursor: pointer;
+  margin: 20px;
+  float: left;
+  width: 350px;
+  height: 297px;
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-wrap {
+  float: left;
+  padding: 5px;
+  width: 203px;
+  height: 287px;
+  background: #4a92fe url("../../../../static/images/icon_picture_white.png") no-repeat 43px 68px;
+  background-size: 128px 162px;
+  border-radius: 0 10px 10px 0;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-info {
+  float: left;
+  width: 137px;
+  height: 100%;
+  overflow: hidden;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-info .reason {
+  margin: 20px 0;
+  padding-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  border-right: 8px solid #4a92fe;
+  color: #4a92fe;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-info ul {
+  padding: 20px 15px 0;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-info ul li {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ececec;
+  line-height: 30px;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-info ul li .name {
+  font-size: 16px;
+  color: #666;
+}
+.details .table-area .picture-area .picture-content .picture-item .picture-info ul li .value {
+  font-size: 18px;
+  color: #333;
+}
+.details .pages-area {
+  margin: 0 40px;
+  border-top-color: #fff !important;
+}
+.details .pages-area .el-pagination__jump {
+  color: #fff;
+}
+
+.details .warning-status {
+  color: #f00 !important;
+  border-right-color: #f00 !important;
+}
+.details .normal-status {
+  color: #097c25 !important;
+  border-right-color: #097c25 !important;
+}

@@ -1,0 +1,125 @@
+{
+  "monitorData": [
+    {
+      "src": "./static/icon/home/icon_real-monitor-0.png",
+      "name": "实时监控_无任务",
+      "flag": "monitor-0",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_real-monitor-1.png",
+      "name": "实时监控_等待点名",
+      "flag": "monitor-1",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_real-monitor-2.png",
+      "name": "实时监控_正在点名",
+      "flag": "monitor-2",
+      "isClick": true
+    }
+  ],
+  "imageData": [
+    {
+      "src": "./static/icon/home/icon_timed-name.png",
+      "name": "定时点名",
+      "flag": "timed-name",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_now-name.png",
+      "name": "即时点名",
+      "flag": "now-name",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_warn-manage.png",
+      "name": "报警管理",
+      "flag": "warn-manage",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_count-form.png",
+      "name": "统计报表",
+      "flag": "count-form",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_duty.png",
+      "name": "值小岗点名",
+      "flag": "duty",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_sys-config.png",
+      "name": "系统管理",
+      "flag": "sys-manage",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_shift.png",
+      "name": "班次管理",
+      "flag": "shift-manage",
+      "isClick": true
+    },
+    {
+      "src": "./static/icon/home/icon_more.png",
+      "name": "",
+      "flag": "more",
+      "isClick": false
+    }
+  ],
+  "shiftHead": [
+    {
+      "name": "班次",
+      "width": 42
+    },
+    {
+      "name": "时间",
+      "width": ""
+    },
+    {
+      "name": "范围",
+      "width": ""
+    },
+    {
+      "name": "总人数",
+      "width": 80
+    },
+    {
+      "name": "实点",
+      "width": 80
+    },
+    {
+      "name": "外出",
+      "width": 80
+    },
+    {
+      "name": "应点未点",
+      "width": 90
+    },
+    {
+      "name": "补点人数",
+      "width": 90
+    },
+    {
+      "name": "人工确认",
+      "width": 90
+    },
+    {
+      "name": "点名结果",
+      "width": 90
+    },
+    {
+      "name": "民警确认",
+      "width": 90
+    },
+    {
+      "name": "操作",
+      "width": 220
+    }
+  ],
+  "shiftName": {
+
+  }
+}

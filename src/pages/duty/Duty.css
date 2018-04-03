@@ -1,0 +1,136 @@
+.duty-list {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ECECEC;
+}
+.duty-list .operating-area {
+  margin-top: 10px;
+  float: left;
+  width: 410px;
+  height: 980px;
+
+  /* 兼容的浏览器（Opera 12.1， IE 10， Firefox 16， Chrome 26， Safari 6.1） */
+  background: linear-gradient(to bottom, #4A92FE, #56D2F8);
+}
+.duty-list .table-area {
+  margin-top: 10px;
+  padding: 0 10px;
+  float: left;
+  width: 1440px;
+  height: 980px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 45, 111, 0.7);
+}
+.duty-list .operating-area .query-form {
+  margin-top: 70px;
+}
+.duty-list .operating-area .query-form .el-form-item__label {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+.duty-list .operating-area .query-form .el-input__inner {
+  width: 220px;
+  border-radius: 20px;
+  margin-top: 2px;
+  padding-left: 15px;
+  border-color: #fff;
+  box-shadow: 0 0 10px #4a92fe;
+}
+.duty-list .operating-area .query-form .el-input__prefix {
+  right: 5px;
+  left: auto;
+}
+.duty-list .operating-area .my-btn-duty {
+  width: 220px !important;
+  font-size: 18px !important;
+  color: #008CFF !important;
+  font-weight: bold !important;
+  letter-spacing: 10px !important;
+}
+.duty-list .operating-area .rehome {
+  margin-left: 80px;
+  margin-top: 100px;
+}
+.duty-list .operating-area .other-btn {
+  margin-top: 40px;
+}
+.duty-list .operating-area .other-btn .my-btn-duty {
+  width: 106px !important;
+  letter-spacing: 0 !important;
+}
+
+.statusText {
+  font-weight: bold;
+}
+.statusText-normal {
+  color: #097C25;
+}
+.statusText-warning {
+  color: #f00;
+}
+
+/*点名结果列表*/
+.duty-list .el-table {
+  color: #333;
+  margin-top: 20px;
+}
+
+/*表头底线*/
+.duty-list .el-table thead th.is-leaf {
+  border-bottom: 1px solid #4A92FE;
+}
+/*表头文字样式*/
+.duty-list .el-table thead {
+  color: #008CFF;
+  font-size: 16px;
+}
+/*表头的内边距*/
+.duty-list .el-table th {
+  padding: 8px 0;
+}
+
+.duty-list .el-table th, .el-table td {
+  text-align: center;
+  border-bottom: 0;
+}
+.duty-list .el-table td{
+  padding: 5px 10px 4px 10px;
+}
+.duty-list .el-table td .cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.duty-list .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #E7F1FF;
+}
+.duty-list .el-button--text {
+  padding: 0;
+  font-size: 12px;
+  color: #008CFF;
+  width: 52px;
+}
+.duty-list .el-popover {
+  top: 100px;
+}
+
+.duty-list .pages-area {
+  padding: 10px;
+  height: 45px;
+  border-top: 1px solid #4A92FE;
+  text-align: center;
+}
+
+.duty-list .el-pagination button, .el-pager li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+.duty-list .el-pagination__jump {
+  font-size: 14px!important;
+  padding-top: 4px;
+}
+

@@ -1,0 +1,92 @@
+.ang-menu {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+.ang-menu .menu-item {
+  cursor: pointer;
+  color: #CECECE;
+  font-size: 22px;
+  font-weight: bold;
+  height: 98px;
+  line-height: 98px;
+  border-bottom: 1px solid #CECECE;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+}
+.ang-menu .menu-item span {
+  display: inline-block;
+}
+.ang-menu .menu-item .menu-item-icon {
+  width: 24px;
+  height: 24px;
+  background: url("../../../static/icon/other/icon_area_uncheck.png") no-repeat;
+  position: absolute;
+  top: 36px;
+  left: 45px;
+}
+.ang-menu .menu-item .menu-item-text {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.ang-menu .menu-item-active {
+  background: url("../../../static/icon/other/icon_area_active.png") no-repeat;
+}
+.ang-menu .menu-item-active .menu-item-text {
+  color: #008CFF;
+}
+.ang-menu .menu-item-active .menu-item-icon {
+  background: url("../../../static/icon/other/icon_area_check.png") no-repeat;
+}
+
+.ang-menu .menu-item .check-room {
+  font-size: 18px;
+  color: #333333;
+  position: absolute;
+  top: 22px;
+  left: 220px;
+}
+.ang-menu .menu-item .check-room div {
+  line-height: normal;
+}
+.ang-menu .menu-item .check-room div span {
+  display: inline-block;
+}
+.ang-menu .menu-item .check-room div span:first-child {
+  width: 35px;
+  text-align: center;
+}
+.ang-menu .menu-item .check-room div span:last-child {
+  font-size: 12px;
+  color: #666666;
+  font-weight: normal;
+}
+.ang-menu .menu-item .check-room div .room-count {
+  font-size: 22px;
+  color: #008CFF;
+}
+
+
+.ang-menu .caret-content {
+  position: absolute;
+  bottom: 0;
+  height: 14px;
+  padding: 14px 50px 0;
+}
+.ang-menu .caret-content .caret-icon {
+  float: left;
+  margin: 0 10px;
+  width: 80px;
+  height: 14px;
+  cursor: pointer;
+}
+.ang-menu .caret-content .caret-icon-bottom {
+  background: url("../../../static/icon/other/icon_caret_bottom.png") no-repeat;
+}
+.ang-menu .caret-content .caret-icon-top {
+  background: url("../../../static/icon/other/icon_caret_top.png") no-repeat;
+}

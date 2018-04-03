@@ -1,0 +1,107 @@
+.warning-list {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ECECEC;
+}
+.warning-list .nav-bar {
+  padding: 20px 0;
+  height: 42px;
+  line-height: 42px;
+}
+.warning-list .nav-bar label {
+  font-size: 18px;
+  color: #008CFF;
+  font-weight: bold;
+}
+
+.warning-list .my-btn {
+  margin-top: 3px;
+  padding: 0 12px !important;
+  font-weight: bold;
+  font-size: 18px;
+  height: 40px;
+  box-shadow: 0 0 10px #4a92fe;
+}
+
+.warning-list .table-area {
+  padding: 10px;
+  width: 1850px;
+  height: 890px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 45, 111, 0.7)
+}
+.warning-list .pages-area {
+  padding: 10px;
+  height: 66px;
+  border-top: 1px solid #4A92FE;
+  text-align: center;
+}
+
+.warning-list .el-pagination button, .el-pager li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+.warning-list .el-pagination__jump {
+  font-size: 14px!important;
+  padding-top: 4px;
+}
+
+/*点名结果列表*/
+.warning-list .el-table {
+  color: #333;
+}
+.warning-list .el-table thead th.is-leaf {
+  background-color: #4A92FE;
+  color: #fff;
+}
+/*表头文字样式*/
+.warning-list .el-table thead {
+  color: #008CFF;
+  font-size: 16px;
+}
+/*表头的内边距*/
+.warning-list .el-table th {
+  padding: 8px 0;
+}
+
+.warning-list .el-table th, .el-table td {
+  text-align: center;
+  border-bottom: 0;
+}
+.warning-list .el-table td{
+  padding: 19px 10px 18px 10px;
+}
+.warning-list .el-table td .cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.warning-list .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #E7F1FF;
+}
+.warning-list .el-button--text {
+  padding: 0;
+  font-size: 12px;
+  color: #008CFF;
+  width: 52px;
+}
+.warning-list .el-button+.el-button {
+  margin-left: 0;
+}
+
+.warning-list .el-popover {
+  top: 100px;
+}
+
+.warning-list .statusText {
+  font-weight: bold;
+}
+.warning-list .statusText-normal {
+  color: #097C25;
+}
+.warning-list .statusText-warning {
+  color: #f00;
+}

@@ -1,0 +1,59 @@
+.role-box {
+  width: 1020px;
+  margin-left: -510px;
+}
+.role-box .my-box-row {
+  float: left;
+  height: 510px;
+  border-bottom: 0;
+  border-right: 1px solid #ececec;
+  margin: 20px 0;
+  padding: 0;
+}
+.role-box .last-box-row {
+  border-right: 0;
+}
+.role-box .my-box-row .my-box-row-name {
+  color: #5598fe;
+  font-weight: bold;
+  font-size: 12px;
+  border-left: 6px solid #5598fe;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+.role-box .my-box-row .my-box-item {
+  padding-left: 40px;
+  padding-right: 50px;
+  float: none;
+}
+.role-box .my-box-row .my-box-item:first-child {
+  margin-right: 0;
+}
+.role-box .my-box-row .my-box-item .my-box-item-control .el-textarea .el-textarea__inner {
+  width: 220px;
+  height: 80px;
+  border-color: #4a92fe;
+}
+.role-box .my-box-row .my-checkbox-area {
+  padding: 0 20px;
+  width: 312px;
+}
+.role-box .my-box-row .my-checkbox-area .el-checkbox-button__inner {
+  width: 100px;
+  height: 60px;
+  padding: 10px;
+  margin: 2px;
+  border: 1px solid #5598fe;
+  line-height: 40px;
+  border-radius: 4px;
+}
+.role-box .my-box-row .my-checkbox-area .is-checked .el-checkbox-button__inner {
+  background-color: #409EFF;
+  color: #fff;
+}
+.role-box .my-box-row .my-tree-area {
+  padding: 0 20px;
+  width: 295px;
+  height: 468px;
+  overflow-y: scroll;
+}

@@ -1,0 +1,142 @@
+.nowname {
+  padding: 0 10px;
+  height: 100%;
+  background-color: #ECECEC;
+}
+.nowname .nav-bar {
+  padding: 20px 15px;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+}
+.nowname .nav-bar label {
+  font-size: 18px;
+  color: #008CFF;
+  font-weight: bold;
+}
+.nowname .nav-bar .add-btn {
+  position: absolute;
+  top: 4px;
+  left: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 110px;
+  height: 110px;
+  background: url("../../../static/icon/home/icon_add.png") no-repeat;
+  z-index: 1000;
+}
+.nowname .nav-bar .add-btn span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #4A92FE;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.nowname .my-btn {
+  padding: 0 21px !important;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  height: 40px !important;
+  box-shadow: 0 0 10px #4a92fe !important;
+}
+
+.nowname .table-area {
+  padding: 10px;
+  width: 1850px;
+  height: 890px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 45, 111, 0.7)
+}
+.nowname .pages-area {
+  padding: 10px;
+  height: 66px;
+  border-top: 1px solid #4A92FE;
+  text-align: center;
+}
+
+.el-pagination button, .el-pager li {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+}
+.el-pagination__jump {
+  font-size: 14px!important;
+  padding-top: 4px;
+}
+
+/*点名结果列表*/
+.nowname .el-table {
+  color: #333;
+}
+
+/*表头底线*/
+.nowname .el-table thead th.is-leaf {
+  border-bottom: 1px solid #4A92FE;
+}
+/*表头文字样式*/
+.nowname .el-table thead {
+  color: #008CFF;
+  font-size: 16px;
+}
+/*表头的内边距*/
+.nowname .el-table th {
+  padding: 8px 0;
+}
+
+.nowname .el-table th, .el-table td {
+  text-align: center;
+  border-bottom: 0;
+}
+.nowname .el-table td{
+  padding: 5px 10px 4px 10px;
+}
+.nowname .el-table td .cell {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.nowname .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #E7F1FF;
+}
+.nowname .el-button--text {
+  padding: 0;
+  font-size: 12px;
+  color: #008CFF;
+  width: 52px;
+}
+.nowname .el-button+.el-button {
+  margin-left: 0;
+}
+
+.nowname .el-popover {
+  top: 100px;
+}
+
+.nowname .statusText {
+  font-weight: bold;
+}
+.nowname .statusText-normal {
+  color: #097C25;
+}
+.nowname .statusText-warning {
+  color: #f00;
+}
+.nowname .warning {
+  margin: auto;
+  width: 80px;
+  padding-left: 19px;
+  background: url("../../../static/icon/home/icon_warning.png") no-repeat;
+  background-position: 13px 3px;
+}
+.nowname .normal {
+  margin: auto;
+  width: 80px;
+  padding-left: 19px;
+  background: url("../../../static/icon/home/icon_normal.png") no-repeat;
+  background-position: 13px 3px;
+}
