@@ -20,7 +20,7 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-##一定要加.babelrc文件
+## 一定要加.babelrc文件
 ```
 {
   "presets": ["es2015"],
@@ -32,4 +32,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     }
   }
 }
+```
+## 注意
+```
+根地址重定向到首页，需要添加?token方式，可以在router/index.js中放开
 ```
