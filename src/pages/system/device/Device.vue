@@ -129,6 +129,24 @@
             </div>
           </div>
           <div class="my-box-row clearfix">
+            <div class="my-box-item">
+              <el-form-item prop="equipmentUser">
+                <p class="my-box-item-label"><i class="el-icon-setting"></i>账号</p>
+                <div class="my-box-item-control">
+                  <el-input v-model="addParams.equipmentUser" placeholder="请输入账号"></el-input>
+                </div>
+              </el-form-item>
+            </div>
+            <div class="my-box-item">
+              <el-form-item prop="equipmentPassword">
+                <p class="my-box-item-label"><i class="el-icon-setting"></i>密码</p>
+                <div class="my-box-item-control">
+                  <el-input v-model="addParams.equipmentPassword" placeholder="请输入密码"></el-input>
+                </div>
+              </el-form-item>
+            </div>
+          </div>
+          <div class="my-box-row clearfix">
             <div class="my-box-item my-box-item-row">
               <el-form-item prop="equipmentType">
                 <p class="my-box-item-label"><i class="el-icon-menu"></i>设备类型</p>

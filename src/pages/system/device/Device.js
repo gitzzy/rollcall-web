@@ -15,6 +15,8 @@ export default {
         prisonRoomId: '',
         equipmentIp: '',
         equipmentPort: '',
+        equipmentUser: '',
+        equipmentPassword: '',
         equipmentName: '',
         equipmentType: '',
         equipmentStatus: '1'
@@ -51,6 +53,14 @@ export default {
         equipmentType: [
           {required: true, message: '请选择设备类型', trigger: 'blur'}
         ],
+        equipmentUser: [
+          {required: true, message: '请输入设备账号', trigger: 'blur'},
+          {pattern: /^[a-zA-Z0-9_-]{2,20}$/, message: '请输入正确账号（2到20位，字母，数字，下划线，减号）', trigger: 'blur'}
+        ],
+        equipmentPassword: [
+          {required: true, message: '请输入设备密码', trigger: 'blur'},
+          {pattern: /^[a-zA-Z0-9!@#$%^&*?]{1,20}$/, message: '请输入正确密码（1到20位，字母，数字，特殊符号）', trigger: 'blur'}
+        ]
       }
     }
   },
@@ -70,6 +80,10 @@ export default {
         res = res.data;
         if (res.status === 'SUCCESS') {
           this.loading = false;
+          res.content.content.forEach(item => {
+            let t = item.createTime
+            item.createTime = `${t.slice(0,4)}-${t.slice(4,6)}-${t.slice(6,8)} ${t.slice(8,10)}:${t.slice(10,12)}:${t.slice(12,14)}`;
+          });
           this.shiftData = res.content;
         } else {
           this.$message({showClose: true, message: res.msg, type: 'warning'})
@@ -145,8 +159,7 @@ export default {
             self_method = 'put';
             self_url = `/equipment/${id}`;
           }
-            console.log(this.addParams);
-            this.$ajax({
+          this.$ajax({
             method: self_method,
             url: self_url,
             data: this.addParams
@@ -182,12 +195,14 @@ export default {
         data: {}
       }).then(res => {
         res = res.data;
-        if (res.status === 'SUCCESS') {
+          if (res.status === 'SUCCESS') {
           this.msgBox = true;
           this.addParams.equipmentName = res.content.equipmentName;
           this.addParams.equipmentType = res.content.equipmentType;
           this.addParams.equipmentIp = res.content.equipmentIp;
           this.addParams.equipmentPort = res.content.equipmentPort;
+          this.addParams.equipmentUser = res.content.equipmentUser;
+          this.addParams.equipmentPassword = res.content.equipmentPassword;
           this.addParams.prisonAreaId = res.content.area.id;
           this.addParams.prisonRoomId = res.content.room.id;
         } else {
@@ -226,6 +241,8 @@ export default {
       this.addParams.equipmentType = '';
       this.addParams.equipmentIp = '';
       this.addParams.equipmentPort = '';
+      this.addParams.equipmentUser = '';
+      this.addParams.equipmentPassword = '';
       this.addParams.prisonAreaId = '';
       this.addParams.prisonRoomId = '';
     },

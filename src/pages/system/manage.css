@@ -146,7 +146,7 @@
   box-shadow: 0 0 20px 1px #008cff;
   border-radius: 2px;
   width: 570px;
-  margin-top: -345px;
+  margin-top: -405px;
   margin-left: -285px;
   z-index: 1000;
 }
@@ -172,7 +172,7 @@
   top: -5px;
 }
 .my-message-box .my-box-row {
-  padding: 20px 15px;
+  padding: 12px 15px;
   border-bottom: 1px solid #ececec;
 }
 .my-message-box .my-box-row .my-box-item {
