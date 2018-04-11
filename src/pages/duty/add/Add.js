@@ -175,24 +175,42 @@ export default {
       this.addParams.rooms = roomsArr;
 
       // 将时间再转成无格式传给后台，麻烦~
-      this.timeArr.forEach(item => {
-        let params = {
-          isEnable: this.addParams.isEnable,
-          memo: this.addParams.memo,
-          rooms: this.addParams.rooms,
-          time: ''
-        };
-        let h = item.getHours();
-        let m = item.getMinutes();
-        let s = item.getSeconds();
+      if (this.timeArr.length === 0) {
+        this.$message({
+          showClose: true,
+            message: '请添加时间！！',
+            type: 'warning'
+        });
+        return false;
+      } else {
+        if (this.addParams.rooms.length === 0) {
+          this.$message({
+            showClose: true,
+            message: '请添加监室！！',
+            type: 'warning'
+          });
+          return false;
+        } else {
+          this.timeArr.forEach(item => {
+            let params = {
+              isEnable: this.addParams.isEnable,
+              memo: this.addParams.memo,
+              rooms: this.addParams.rooms,
+              time: ''
+            };
+            let h = item.getHours();
+            let m = item.getMinutes();
+            let s = item.getSeconds();
 
-        h = h < 10 ? `0${h}` : h;
-        m = m < 10 ? `0${m}` : m;
-        s = s < 10 ? `0${s}` : s;
+            h = h < 10 ? `0${h}` : h;
+            m = m < 10 ? `0${m}` : m;
+            s = s < 10 ? `0${s}` : s;
 
-        params.time = `${h}${m}${s}`;
-        paramObj.dutys.push(params);
-      });
+            params.time = `${h}${m}${s}`;
+            paramObj.dutys.push(params);
+          });
+        }
+      }
 
       this.$ajax({
         method: 'post',
