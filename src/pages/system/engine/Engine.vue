@@ -100,7 +100,7 @@
             <div class="my-box-item my-box-item-row">
               <el-form-item prop="engineStatus">
                 <p class="my-box-item-label"><i class="el-icon-time"></i>实时状态</p>
-                <div class="my-box-item-control overflow-scroll">
+                <div class="my-box-item-control">
                   <el-radio-group v-model="addParams.engineStatus">
                     <el-radio-button label="0">异常</el-radio-button>
                     <el-radio-button label="1">正常</el-radio-button>

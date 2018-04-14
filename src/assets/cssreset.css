@@ -82,8 +82,10 @@ html { overflow-y: scroll; }
   float: right;
 }
 
-/*清除浏览器滚动条*/
-/*::-webkit-scrollbar {*/
-  /*width: 0;*/
-  /*height: 0;*/
-/*}*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, .6);
+}
