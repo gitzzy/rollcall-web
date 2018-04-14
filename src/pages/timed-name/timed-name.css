@@ -30,9 +30,10 @@
 }
 
 .timed-roll-call .content-area {
-  width: 1870px;
+  /*width: 1870px;*/
   height: 898px;
-  background: #fff url("../../../static/images/rooms_bg.png") no-repeat;
+  background: #fff url("../../../static/images/rooms_bg.png") no-repeat 100% 100%;
+  background-size: 100% 100%;
 }
 
 
@@ -48,18 +49,20 @@
 
 .timed-roll-call .areas-content {
   float: left;
-  width: 1550px;
+  width: calc(100% - 320px);
   height: 898px;
 }
 .timed-roll-call .areas-content .areas-content-head {
   height: 98px;
 }
 .timed-roll-call .areas-content .rooms-list {
-  width: 1370px;
+  /*width: 1370px;*/
   height: 700px;
   background-color: #fff;
   padding-top: 30px;
-  margin-left: 50px;
+  margin-left: 30px;
+  margin-right: 10px;
+  overflow: hidden;
   position: relative;
 }
 .timed-roll-call .areas-content .rooms-list .rooms-list-head {
@@ -68,17 +71,18 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 30px;
-  width: 1360px;
+  width: 100%;
   height: 30px;
   position: absolute;
   top: 0;
   background: url("../../../static/icon/other/icon_rooms_head.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 
 .timed-roll-call .areas-content .query-form {
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 30px;
 }
 
 .timed-roll-call .areas-content .query-form .el-form .el-form-item {
@@ -166,10 +170,10 @@
 }
 
 .timed-roll-call .ang-rooms {
-  width: 1208px;
+  /*width: 1208px;*/
   height: 658px;
   padding: 21px 81px;
-  overflow: hidden;
+  overflow: auto;
   background: url("../../../static/images/rooms_list_bg.png") no-repeat;
   position: relative;
 }

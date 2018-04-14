@@ -19,7 +19,7 @@ export default {
   @import url('assets/cssreset.css');
 
   #app {
-    width: 1890px;
+    /*width: 1890px;*/
     height: 1000px;
   }
 </style>

@@ -62,7 +62,7 @@
 
 .manage .table-area {
   padding: 10px;
-  width: 1550px;
+  /*width: 1550px;*/
   height: 880px;
 }
 .manage .table-area .el-table {

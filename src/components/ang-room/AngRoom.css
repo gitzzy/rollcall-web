@@ -7,7 +7,7 @@
   width: 118px;
   height: 118px;
   line-height: 118px;
-  margin: 21px 61px;
+  margin: 20px;
   cursor: pointer;
   /*不允许选中文字*/
   -webkit-user-select:none;

@@ -2,22 +2,27 @@
   padding: 0 10px;
   height: 100%;
   background-color: #ECECEC;
+  position: relative;
 }
 .duty-list .operating-area {
   margin-top: 10px;
   float: left;
-  width: 410px;
+  width: 360px;
   height: 980px;
 
   /* 兼容的浏览器（Opera 12.1， IE 10， Firefox 16， Chrome 26， Safari 6.1） */
   background: linear-gradient(to bottom, #4A92FE, #56D2F8);
 }
 .duty-list .table-area {
+  width: calc(100% - 405px);
+  position: absolute;
+  top: 0;
   margin-top: 10px;
+  margin-left: 365px;
   padding: 0 10px;
-  float: left;
-  width: 1440px;
-  height: 980px;
+  /*float: left;*/
+  /*width: 1440px;*/
+  height: 981px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 45, 111, 0.7);
 }

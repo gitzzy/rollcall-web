@@ -93,39 +93,50 @@ export default {
     deleteEvent: function(id) {
       let idArr = [];
       idArr.push(id);
-      this.$ajax({
-        method: 'delete',
-        url: '/job',
-        data: idArr
-      }).then(res => {
-        res = res.data;
-        if (res.status === 'SUCCESS') {
-          let sData = this.shiftData.content;
-          sData.forEach(item => {
-            if (item.id === id) {
-              this.shiftData.content.remove(item)
-            }
-          });
+      this.$confirm('您确定要删除该条数据吗?', '删除', {
+        confirmButtonText: '确定',
+        cancelButtonText: '取消',
+        type: 'warning'
+      }).then(() => {
+          this.$ajax({
+              method: 'delete',
+              url: '/job',
+              data: idArr
+          }).then(res => {
+              res = res.data;
+              if (res.status === 'SUCCESS') {
+                  let sData = this.shiftData.content;
+                  sData.forEach(item => {
+                      if (item.id === id) {
+                          this.shiftData.content.remove(item)
+                      }
+                  });
 
-          this.$message({
-            showClose: true,
-            message: res.msg,
-            type: 'success'
+                  this.$message({
+                      showClose: true,
+                      message: res.msg,
+                      type: 'success'
+                  })
+              } else {
+                  this.$message({
+                      showClose: true,
+                      message: res.msg,
+                      type: 'warning'
+                  })
+              }
+          }).catch(err => {
+              this.$message({
+                  showClose: true,
+                  message: '获取数据失败！',
+                  type: 'warning'
+              })
           })
-        } else {
+      }).catch(() => {
           this.$message({
-            showClose: true,
-            message: res.msg,
-            type: 'warning'
-          })
-        }
-      }).catch(err => {
-        this.$message({
-          showClose: true,
-          message: '获取数据失败！',
-          type: 'warning'
-        })
-      })
+              type: 'info',
+              message: '已取消删除'
+          });
+      });
     },
 
     // 工具方法

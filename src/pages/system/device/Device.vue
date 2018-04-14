@@ -103,7 +103,7 @@
               <el-form-item prop="prisonRoomId">
                 <p class="my-box-item-label"><i class="el-icon-location-outline"></i>监室</p>
                 <div class="my-box-item-control">
-                  <el-select v-model="addParams.prisonRoomId" :clearable="true" @change="getChildRoom" placeholder="请选择监室">
+                  <el-select v-model="addParams.prisonRoomId" :clearable="true" placeholder="请选择监室">
                     <el-option v-for="room in roomList" :key="room.id" :label="room.label" :value="room.value"></el-option>
                   </el-select>
                 </div>

@@ -2,11 +2,12 @@
   padding: 0 10px;
   height: 100%;
   background-color: #ECECEC;
+  position: relative;
 }
 .repair .operating-area {
   margin-top: 10px;
   float: left;
-  width: 410px;
+  width: 360px;
   height: 981px;
   overflow: hidden;
 
@@ -14,10 +15,14 @@
   background: linear-gradient(to bottom, #4A92FE, #56D2F8);
 }
 .repair .table-area {
+  width: calc(100% - 405px);
+  position: absolute;
+  top: 0;
   margin-top: 10px;
+  margin-left: 365px;
   padding: 0 10px;
-  float: left;
-  width: 1440px;
+  /*float: left;*/
+  /*width: 1440px;*/
   height: 981px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 45, 111, 0.7);

@@ -124,30 +124,31 @@
               </el-tooltip>
             </template>
           </el-table-column>
-          <el-table-column label="类型" prop="jobTypeName" width="80"></el-table-column>
-          <el-table-column label="总人数" prop="totalNum" width="80"></el-table-column>
-          <el-table-column label="实点" prop="realNum" width="80"></el-table-column>
-          <el-table-column label="外出" prop="outNum" width="80">
+          <el-table-column label="类型" prop="jobTypeName" width="70"></el-table-column>
+          <el-table-column label="总人数" prop="totalNum" width="70"></el-table-column>
+          <el-table-column label="实点" prop="realNum" width="70"></el-table-column>
+          <el-table-column label="外出" prop="outNum" width="70">
             <template slot-scope="scope">
               <div :class="scope.row.outNum !== 0 ? 'statusText-warning' : ''">{{scope.row.outNum}}</div>
             </template>
           </el-table-column>
-          <el-table-column label="应点未点" prop="failNum" width="100">
+          <el-table-column label="应点未点" prop="failNum" width="90">
             <template slot-scope="scope">
               <div :class="scope.row.failNum !== 0 ? 'statusText-warning' : ''">{{scope.row.failNum}}</div>
             </template>
           </el-table-column>
-          <el-table-column label="补点人数" prop="repairNum" width="100"></el-table-column>
-          <el-table-column label="人工确认" prop="confimNum" width="100"></el-table-column>
-          <el-table-column label="点名结果" prop="result" width="100">
+          <el-table-column label="补点人数" prop="repairNum" width="90"></el-table-column>
+          <el-table-column label="人工确认" prop="confimNum" width="90"></el-table-column>
+          <el-table-column label="点名结果" prop="result" width="90">
             <template slot-scope="scope">
               <div class="statusText statusText-normal normal" v-if="scope.row.result === '正常'">正常</div>
               <div class="statusText statusText-warning warning" v-else>异常</div>
             </template>
           </el-table-column>
-          <el-table-column label="民警确认" prop="isPoliceConfim" width="100">
+          <el-table-column label="民警确认" prop="isPoliceConfim" width="90">
             <template slot-scope="scope">
               <div class="statusText statusText-normal" v-if="scope.row.isPoliceConfim === '已确认'">已确认</div>
+              <div class="statusText statusText-warning" v-if="scope.row.isPoliceConfim === '部分确认'">部分确认</div>
               <div class="statusText statusText-warning" v-else>未确认</div>
             </template>
           </el-table-column>

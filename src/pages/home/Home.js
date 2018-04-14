@@ -257,12 +257,15 @@ export default {
                     this.showMonitor(contentData.showButton);
 
                     if (contentData.loadData === '1') {
+                      console.log(contentData.loadData, '统计');
                       // 统计
                       this.getPrisoner(this.form.areas);
                     } else if (contentData.loadData === '2') {
+                      console.log(contentData.loadData, '点名结果');
                       // 点名结果
                       this.getShiftData();
                     } else if (contentData.loadData === '3') {
+                      console.log(contentData.loadData, '值小岗');
                       // 值小岗
                       this.getDutyData();
                     }

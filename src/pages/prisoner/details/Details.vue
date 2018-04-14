@@ -60,7 +60,7 @@
                   <div class="reason normal-status" v-else-if="ic.RcStatus === '在押'">{{ic.RcStatus}}</div>
                   <ul>
                     <li><p class="name">编号</p><p class="value">{{ic.worknum}}</p></li>
-                    <li><p class="name">姓名</p><p class="value">{{ic.name}}</p></li>
+                    <li :title="ic.name"><p class="name">姓名</p><p class="value">{{ic.name}}</p></li>
                   </ul>
                 </div>
               </li>

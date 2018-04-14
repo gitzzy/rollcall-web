@@ -14,7 +14,7 @@
     <div class="content-area">
       <div class="control-area">
         <div class="control">
-          <el-form ref="form" :model="form" label-width="90px">
+          <el-form ref="form" :model="form" label-width="80px">
             <el-form-item label="时间">
               <el-time-picker v-model="form.time" :picker-options="{
                   selectableRange: '00:00:00 - 23:59:59'

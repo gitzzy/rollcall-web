@@ -71,7 +71,7 @@
             <div class="statusText statusText-warning" v-else>未确认</div>
           </template>
         </el-table-column>
-        <el-table-column label="操作" width="300">
+        <el-table-column label="操作" width="240">
           <template slot-scope="scope">
             <el-button type="text" @click="loadDetails(scope.row.shiftId, scope.row.shiftName)"><img src="static/icon/home/icon_details.png"><p>详情</p></el-button>
             <el-button type="text"

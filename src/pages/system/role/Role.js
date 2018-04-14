@@ -225,25 +225,36 @@ export default {
     deleteHandle: function(id) {
       let idArr = [];
       idArr.push(id);
-      this.$ajax({
-        method: 'delete',
-        url: '/role',
-        data: idArr
-      }).then(res => {
-        res = res.data;
-        if (res.status === 'SUCCESS') {
-          this.getApi(this.reqData);
-          this.$message({showClose: true, message: res.msg, type: 'success'})
-        } else {
-          this.$message({showClose: true, message: res.msg, type: 'warning'})
-        }
-      }).catch(err => {
-        this.$message({
-          showClose: true,
-          message: '获取数据失败！',
-          type: 'warning'
-        })
-      })
+        this.$confirm('您确定要删除该条数据吗?', '删除', {
+            confirmButtonText: '确定',
+            cancelButtonText: '取消',
+            type: 'warning'
+        }).then(() => {
+            this.$ajax({
+                method: 'delete',
+                url: '/role',
+                data: idArr
+            }).then(res => {
+                res = res.data;
+                if (res.status === 'SUCCESS') {
+                    this.getApi(this.reqData);
+                    this.$message({showClose: true, message: res.msg, type: 'success'})
+                } else {
+                    this.$message({showClose: true, message: res.msg, type: 'warning'})
+                }
+            }).catch(err => {
+                this.$message({
+                    showClose: true,
+                    message: '获取数据失败！',
+                    type: 'warning'
+                })
+            })
+        }).catch(() => {
+            this.$message({
+                type: 'info',
+                message: '已取消删除'
+            });
+        });
     },
     showAlert: function() {
       this.showTitle = '新增角色';

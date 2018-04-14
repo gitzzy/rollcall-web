@@ -4,9 +4,10 @@
   margin-right: 10px;
   background: #fff url("../../../static/images/main-bg.png") no-repeat;
   background-size: 100% 100%;
-  width: 1343px;
+  width: 70%;
   height: 390px;
   position: relative;
+  overflow: auto;
 }
 .home .nav-area .real-time-area {
   padding-left: 43px;
@@ -25,7 +26,7 @@
 }
 .home .nav-area .nav-list li {
   float: left;
-  margin: 27px 25px 0 25px;
+  margin: 27px .1% 0 .1%;
 }
 
 
@@ -43,7 +44,7 @@
 }
 .home .module-wrap .module-content {
   box-shadow: 0 4px 10px rgba(0, 45, 111, 0.7);
-  padding: 24px 14px;
+  padding: 24px 10px;
 }
 .home .module-content label {
   width: 50px !important;
@@ -71,6 +72,7 @@
   float: left;
   margin-top: 20px;
   overflow: hidden;
+  border-radius: 10px;
 }
 .home .module-content .data-card .data-item {
   display: inline-block;
@@ -87,9 +89,10 @@
   color: #333333;
 }
 .home .module-content .card-1 {
-  width: 240px;
+  width: 45%;
   height: 115px;
   background: url("../../../static/images/card-1.png") no-repeat;
+  background-size: 100% 100%;
   position: relative;
 }
 .home .module-content .card-1 .data-item {
@@ -107,15 +110,15 @@
 }
 .home .module-content .card-1 .item-2 {
   top: 19px;
-  left: 125px;
+  left: 100px;
 }
 .home .module-content .card-1 .item-3 {
   top: 50px;
-  left: 125px;
+  left: 100px;
 }
 .home .module-content .card-1 .item-4 {
   top: 82px;
-  left: 125px;
+  left: 100px;
 }
 .home .module-content .card-1 .item-2 .item-name {
   padding-right: 32px;
@@ -128,9 +131,10 @@
 }
 
 .home .module-content .card-2 {
-  width: 240px;
+  width: 50%;
   height: 115px;
   background: url("../../../static/images/card-2.png") no-repeat;
+  background-size: 100% 100%;
   margin-left: 19px;
 }
 .home .module-content .card-2 .data-item {
@@ -138,9 +142,10 @@
 }
 
 .home .module-content .card-3 {
-  width: 500px;
+  width: calc(100% - 10px);
   height: 115px;
   background: url("../../../static/images/card-3.png") no-repeat;
+  background-size: 100% 100%;
   padding-left: 5px;
 }
 .home .module-content .card-3 .data-item {
@@ -151,7 +156,7 @@
   float: left;
   margin-top: 10px;
   height: 400px;
-  width: 530px;
+  width: calc(30% - 18px);
 }
 .home .module-wrap.survey .module-title {
   background: url("../../../static/icon/home/module-survey.png") no-repeat;
@@ -165,7 +170,7 @@
   top: 410px;
   margin-top: 15px;
   height: 572px;
-  width: 1420px;
+  width: 75%;
 }
 .home .module-wrap.result .module-title {
   background: url("../../../static/icon/home/module-result.png") no-repeat;
@@ -178,10 +183,11 @@
 .home .module-wrap.duty {
   position: absolute;
   top: 410px;
-  left: 1435px;
+  left: 75%;
+  margin-left: 10px;
   margin-top: 15px;
   height: 572px;
-  width: 448px;
+  width: 24%;
 }
 .home .module-wrap.duty .module-title {
   background: url("../../../static/icon/home/module-duty.png") no-repeat;

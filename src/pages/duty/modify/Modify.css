@@ -30,13 +30,14 @@
 }
 
 .duty-list .content-area {
-  width: 1880px;
+  /*width: 1880px;*/
   height: 908px;
   background: #fff url("../../../../static/images/rooms_bg.png") no-repeat;
+  background-size: 100% 100%;
 }
 .duty-list .content-area .control-area {
   float: left;
-  width: 290px;
+  width: 260px;
   height: 908px;
   background-color: #fff;
 }
@@ -46,7 +47,16 @@
   border-right: 1px solid #4A92FE;
   position: relative;
 }
-
+.duty-list .content-area .control-area .control .tips {
+  color: #B4B4B4;
+  position: absolute;
+  top: 90px;
+  left: 42px;
+}
+.duty-list .content-area .control-area .control .tips i {
+  color: #4a92fe;
+  margin-right: 5px;
+}
 .duty-list .content-area .control-area .control .el-form {
   padding-top: 40px;
 }
@@ -84,12 +94,54 @@
   height: 10px;
   left: 6px;
 }
+.duty-list .content-area .control-area .control .query-btn-area {
+  padding-top: 32px;
+  padding-left: 43px;
+}
+.duty-list .content-area .control-area .control .query-btn-area .my-btn-duty {
+  font-size: 18px;
+  color: #4a92fe;
+  font-weight: bold;
+  border-radius: 40px;
+  border-color: #4a92fe;
+  box-shadow: 0 0 10px #4a92fe;
+}
+.duty-list .content-area .control-area .control .time-list {
+  width: 180px;
+  height: 600px;
+  margin-top: 10px;
+  margin-left: 40px;
+  overflow-y: scroll;
+}
+.duty-list .content-area .control-area .control .time-list ul li {
+  height: 39px;
+  line-height: 39px;
+  border-bottom: 1px solid #ececec;
+  color: #666;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.duty-list .content-area .control-area .control .time-list ul li button {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 40px;
+  height: 20px;
+  background-color: #4A92FE;
+  color: #fff;
+  font-size: 12px;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 0 10px #4A92FE;
+}
 
 .duty-list .content-area .areas-menu {
   background-color: #fff;
   float: left;
   padding: 25px 10px;
-  width: 320px;
+  width: 300px;
   height: 858px;
   overflow: hidden;
   position: relative;
@@ -97,11 +149,11 @@
 
 .duty-list .content-area .areas-content {
   float: left;
-  width: 1250px;
+  width: calc(100% - 580px);
   height: 908px;
 }
 .duty-list .content-area .areas-content .rooms-list {
-  width: 1230px;
+  width: calc(100% - 20px);
   height: 700px;
   background-color: #fff;
   padding-top: 30px;
@@ -115,12 +167,12 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 30px;
-  width: 1360px;
+  width: calc(100% - 10px);
   height: 30px;
   position: absolute;
   top: 0;
-  background: url("../../../../static/icon/other/icon_rooms_head.png") no-repeat;
-  background-position: -140px 0;
+  background: url("../../../../static/icon/other/icon_rooms_head.png") no-repeat 0 0;
+  background-size: 100% 100%;
 }
 .duty-list .content-area .areas-content .rooms-list .add-check-all {
   position: absolute;
@@ -130,11 +182,12 @@
 
 }
 .duty-list .content-area .areas-content .rooms-list .ang-rooms {
-  width: 1210px;
+  /*width: 1210px;*/
   height: 645px;
   padding: 55px 10px 0;
   overflow: hidden;
   background: url("../../../../static/images/rooms_list_bg.png") no-repeat;
+  background-size: 100%;
   position: relative;
 }
 .duty-list .content-area .areas-content .form-btn {
@@ -152,11 +205,11 @@
 }
 .duty-list .content-area .areas-content .form-btn .my-btn-named-ghost {
   background-color: transparent;
-  color: #fff;
-  font-size: 22px;
+  color: #fff!important;
+  font-size: 22px!important;
   padding: 11px 42px 11px 75px!important;
   margin: 0 25px;
-  height: auto;
+  height: auto!important;
   border-radius: 23px;
   border: 2px solid #fff;
   cursor: pointer;

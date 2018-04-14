@@ -1,11 +1,11 @@
 .details .table-area {
   padding: 0 !important;
-  width: 1880px !important;
   height: 908px !important;
   background: url("../../../../static/images/rooms_bg.png") no-repeat;
+  background-size: 100% 100%;
 }
 .details .table-area .data-area {
-  width: 285px;
+  width: 260px;
   height: 878px;
   padding: 15px;
   background-color: #fff;
@@ -29,27 +29,30 @@
   color: #4a92fe;
 }
 .details .table-area .picture-area {
-  width: 1565px;
+  width: calc(100% - 290px);
   height: 908px;
+  overflow-y: auto;
 }
 .details .table-area .picture-area .picture-content {
   padding: 80px 12px;
 }
 .details .table-area .picture-area .picture-content .picture-item {
   cursor: pointer;
-  margin: 20px;
+  margin: 33px 5px;
   float: left;
-  width: 350px;
-  height: 297px;
+  width: calc(25% - 20px);
+  min-width: 320px;
+  height: 270px;
   background-color: #fff;
   border-radius: 0 10px 10px 0;
 }
 .details .table-area .picture-area .picture-content .picture-item .picture-wrap {
   float: left;
-  padding: 5px;
-  width: 203px;
-  height: 287px;
-  background: #4a92fe url("../../../../static/images/icon_picture_white.png") no-repeat 43px 68px;
+  padding: 8px;
+  width: calc(100% - 150px);
+  min-width: 160px;
+  height: 254px;
+  background: #4a92fe url("../../../../static/images/icon_picture_white.png") no-repeat 50% 68px;
   background-size: 128px 162px;
   border-radius: 0 10px 10px 0;
 }
@@ -59,8 +62,8 @@
   border-radius: 10px;
 }
 .details .table-area .picture-area .picture-content .picture-item .picture-info {
-  float: left;
-  width: 137px;
+  float: right;
+  width: 120px;
   height: 100%;
   overflow: hidden;
 }
@@ -77,7 +80,7 @@
   padding: 20px 15px 0;
 }
 .details .table-area .picture-area .picture-content .picture-item .picture-info ul li {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border-bottom: 1px solid #ececec;
   line-height: 30px;
 }
